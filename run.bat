@@ -1,5 +1,5 @@
 ECHO OFF
 
-ECHO Extract a rar file
+ECHO nodejs image
 
-docker run --rm -v %CD%:/files maxcnunes/unrar unrar x -r Trunk.rar
+docker run -it --rm --name node node:7.7.4-alpine
