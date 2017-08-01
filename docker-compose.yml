@@ -2,14 +2,12 @@ version: "3"
 
 services:
     node:
-        image: node:7.7.4-alpine
         ports:
             - "8080:3000"
-        volumes:
-            - .:/src
-        working_dir: /src
-        command: node app.js
         networks:
             - webnet
+        build:
+            context: ./
+            dockerfile: Dockerfile
 networks:
     webnet:
