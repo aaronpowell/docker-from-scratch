@@ -1,13 +1,14 @@
 version: "3"
 
 services:
-    node:
+    sql:
         ports:
-            - "8080:3000"
+            - "1433:1433"
         networks:
-            - webnet
-        build:
-            context: ./
-            dockerfile: Dockerfile
+            - sqlnet
+        image: microsoft/mssql-server-linux
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=yourStrong(!)Password
 networks:
-    webnet:
+    sqlnet:

@@ -1,7 +1,7 @@
 ECHO OFF
 
-ECHO nodejs image
+ECHO running sql server
 
-docker-compose -f ./docker-compose.yml up node
+docker-compose -f ./docker-compose.yml up sql
 
 docker-compose rm -f
