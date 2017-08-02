@@ -1,7 +1,3 @@
 ECHO OFF
 
-ECHO running sql server
-
-docker-compose -f ./docker-compose.yml up sql
-
-docker-compose rm -f
+ECHO use VS 2017 to run the demo

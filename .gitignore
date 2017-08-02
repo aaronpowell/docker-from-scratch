@@ -1,1 +1,5 @@
 Trunk/
+bin/
+obj/
+.vs
+docker-compose.generated.yml
