@@ -11,8 +11,6 @@ services:
       - web
       - db
   sql:
-    ports:
-      - "1433:1433"
     image: microsoft/mssql-server-linux
     environment:
       - ACCEPT_EULA=Y
