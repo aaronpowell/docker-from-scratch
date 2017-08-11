@@ -3,3 +3,4 @@ bin/
 obj/
 .vs
 docker-compose.generated.yml
+src/app
