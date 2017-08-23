@@ -1,4 +1,0 @@
-FROM scratch
-
-COPY src/app /
-CMD ["/app"]
