@@ -1,5 +1,5 @@
-ECHO OFF
+#! /bin/sh
 
-ECHO Running the docker ubuntu example
+echo Running the docker ubuntu example
 
 docker run -it --platform linux ubuntu /bin/bash
