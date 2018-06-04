@@ -1,6 +1,6 @@
-ECHO OFF
+#!/bin/sh
 
-ECHO Running multiple containers for an image
+echo Running multiple containers for an image
 
 docker run -it -d --rm --platform=linux --name ubuntu1 ubuntu /bin/bash
 docker run -it -d --rm --platform=linux --name ubuntu2 ubuntu /bin/bash
