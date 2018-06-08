@@ -1,4 +1,4 @@
-version: '3'
+version: '3.4'
 
 services:
   demoapp:
@@ -7,6 +7,10 @@ services:
       context: ./DemoApp
       dockerfile: Dockerfile
     container_name: demoapp
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+    ports:
+      - "80"
     networks:
       - web
       - db
@@ -15,8 +19,8 @@ services:
       - "1433:1433"
     image: microsoft/mssql-server-linux
     environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=yourStrong(!)Password
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "yourStrong(!)Password"
     container_name: demoapp_sql
     networks:
       db:

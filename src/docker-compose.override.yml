@@ -1,8 +1,8 @@
-version: '3'
+version: '3.4'
 
 services:
   demoapp:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      ASPNETCORE_ENVIRONMENT: "Development"
     ports:
       - "80"
