@@ -1,6 +1,6 @@
-ECHO OFF
+#!/bin/bash
 
-ECHO nodejs image
+echo nodejs image
 
 docker build --platform=linux -t nodejs-app .
 
